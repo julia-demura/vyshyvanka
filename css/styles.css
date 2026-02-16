@@ -1,4 +1,7 @@
 /* #region base */
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: "Manrope", sans-serif;
     color: #fcf9f9;
@@ -18,7 +21,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 button{
@@ -32,6 +35,32 @@ address{
     padding-right: 50px;
     padding-left: 50px;
     margin: 0 auto;
+}
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.45;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.accent-text{
+    color: #ecd979;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 /* #endregion */
 /* #region header */
@@ -55,8 +84,8 @@ address{
     font-size: 14px;
     line-height: 1.28;
     text-transform: uppercase;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 .nav-link:hover, .nav-link:focus{
     color: #ecd979;
@@ -101,5 +130,174 @@ address{
 .soc-link:hover, .soc-link:focus{
     border: 1px solid #ecd979;
     background-color: transparent;
+}
+/* #endregion */
+/* #region hero */
+.hero-section{
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+.hero-container {
+    display: flex;
+}
+.hero-img {
+    margin-right: 40px;
+    border-radius: 4px;
+}
+.title-wrap{
+    padding-top: 94px;
+    margin-right: 115px;
+}
+.hero-title {
+    width: 518px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+}
+.hero-link {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+    display: flex;
+     margin-left: 140px;
+}
+.hero-link:hover, .hero-link:focus{
+    border: 1px solid #ecd979;
+}
+.star-wrap{
+    padding-top: 14px;
+}
+.star-img {
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+.hero-text {
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+}
+/* #endregion */
+/* #region about */
+.about-container {
+    display: flex;
+    gap: 50px;
+}
+.about-text-wrap{
+    width: 536px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+}
+.about-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+.about-img {
+    border-radius: 4px;
+}
+/* #endregion */
+/* #region collection */
+.collection-section .title {
+  text-align: center;
+}
+.collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+.collection-item {
+    width: calc((100% - 2 * 20px) / 3);
+}
+.collection-img {
+    border-radius: 4px;
+}
+.collection-text-wrap{
+    padding-top: 18px;
+}
+.collection-subtitle {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.collection-price {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: rgba(252, 249, 249, 0.4);
+}
+/* #endregion */
+/* #region gallery */
+/* #endregion */
+/* #region order */
+.order-container {
+    display: flex;
+    gap: 50px;
+}
+.order-img {
+    border-radius: 4px;
+}
+.order-title {
+    width: 542px;
+    line-height: 1.32;
+}
+/* #endregion */
+/* #region testimonials */
+.testimonials-list {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+.testimonials-item {
+    width: calc((100% - 2 * 26px) / 3);
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 4px;
+    padding: 0px 18px 18px;
+}
+.testimonials-img {
+     margin: 0 auto;
+    margin-bottom: 14px;
+}
+.testimonials-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.testimonials-text {
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+    padding-bottom: 39px;
+}
+/* #endregion */
+/* #region footer */
+.page-footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.page-footer .nav-list {
+  margin-bottom: 117px;
+}
+.footer-text {
+    width: 754px;
+    font-size: 64px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
 }
 /* #endregion */
